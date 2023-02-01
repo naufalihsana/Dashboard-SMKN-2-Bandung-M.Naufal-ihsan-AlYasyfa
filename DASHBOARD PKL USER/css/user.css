@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+:root {
+    --surface-color: #fff;
+    --curve: 40;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #EEEEEE;
+    background-size: cover;
+    font-family: initial;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 35px;
+    list-style-type: none;
+  }
+  
+  .card {
+    position: relative;
+    display: block;
+    height: 100%; 
+    width: 90%; 
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    text-decoration: none;
+    margin-left: 130px;
+  }
+  
+  .card__image {      
+    width: 100%;
+    height: auto;
+  }
+  
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius: calc(var(--curve) * 1px);    
+    background-color: var(--surface-color);      
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card:hover .card__overlay {
+    transform: translateY(0);
+  }
+  
+  .card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;    
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;      
+    z-index: 1;
+  }
+  
+  .card__arc path {
+    fill: var(--surface-color);
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+  }       
+  
+  .card:hover .card__header {
+    transform: translateY(0);
+  }
+  
+  .card__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;      
+    border-radius: 50%;      
+  }
+  
+  .card__title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: #6A515E;
+  }
+  
+  .card__tagline {
+    display: block;
+    margin: 1em 0;
+    font-family: "MockFlowFont";  
+    font-size: .8em; 
+    color: #D7BDCA;  
+  }
+  
+  .card__status {
+    font-size: .8em;
+    color: #D7BDCA;
+  }
+  
+  .card__description {
+    padding: 0 1em 8px;
+    margin: 0;
+    color: #D7BDCA;
+    font-family: "MockFlowFont";   
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    line-height: normal;
+    font-size: small;
+  }    
+
+  
+  *{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .dropbtn {
+      background-color: #EEEEEE;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+  
+    img{
+      height: 70px;
+      width: 70px;
+    }
+  
+    .nav{
+      top: 0;
+      width: 100%;
+      height: 70px;
+      background-color:#EEEEEE;
+      font-family: initial;
+      font-family: 'Poppins',sans-serif;
+     
+    }
+
+    
+    .dropbtn:hover, .dropbtn:focus {
+      background-color: rgb(254, 255, 255);
+    }
+    
+    .dropdown {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      top: 50px;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #ddd;}
+    .show {display:block;}
+  
+    .sidebar{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background: black;
+      font-family: initial;
+      font-family: 'Poppins',sans-serif;
+    }
+  
+    .sidebar header{
+      font-size: 25px;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      line-height: 30px;
+      user-select: none;
+      padding: 19px;
+    }
+  
+    .sidebar ul a{
+      display: block;
+      height: 100%;
+      width: 100%;
+      line-height: 65px;
+      font-size: 20px;
+      color: white;
+      padding-left: 25px;
+      box-sizing: border-box;
+      border-top: 1px solid black;
+      border-bottom: 1px solid rgb(0, 0, 0);
+      transition: .4s;
+    }
+
+    .sidebar li a{
+      color: white;
+    }
+  
+    .sidebar ul li:hover a{
+      padding-left: 20px;
+      background-color: #222222;
+    }
+  
+    .sidebar ul a i{
+      text-align: center;
+    }
+
+    h2{
+      padding: 20px;
+      color: rgb(7, 7, 7);
+    }

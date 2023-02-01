@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/db.css">
+</head>
+<body>
+   <div class="nav">
+    <div class="dropdown">
+      <h2>Admin</h2>
+            <img src="/assets/profile-svgrepo-com.svg" onclick="myFunction()" class="dropbtn" >
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">profil</a>
+          <a href="../user/dblogin.html">log out</a>
+        </div>
+      </div>
+        </div>
+        <div class="sidebar">
+          <header>MENU</header>
+          <ul>
+            <li><a href="db.html">HOME</i></a></li>
+            <li><a href="siswa.html">SISWA</i></a></li>
+            <li><a href="guru.html">GURU</i></a></li>
+            <li><a href="pekerja.html">PEKERJA</i></a></li>
+          </ul>
+        </div>
+    </div> 
+</div>
+    </div>
+    <div class="hero">
+      <h1>DATA PEKERJA</h1>
+      <table border="3">
+        <tr>
+            <td>NAMA</td>
+            <td>EMAIL</td>
+            <td>NIK</td>
+            <td>EDIT</td>
+            <td>DELETE</td>
+        </tr>
+        <tr style="background-color: rgb(255, 252, 248);">
+            <td>Agus Bijer</td>
+            <td>MIEGOCEKAN@gmail.com</td>
+            <td>12234165218</td>
+            <td><a href="input.html"><img src="/assets/edit2.svg" ></a></td>
+            <td><a href="#"><img src="/assets/delete2.svg" ></a></td>
+        </tr>
+        <tr>
+            <td>H.Kristanto</td>
+            <td>MIEGOCEKAN@gmail.com</td>
+            <td>12234165218</td>
+            <td><a href="input.html"><img src="/assets/edit2.svg" ></a></td>
+            <td><a href="#"><img src="/assets/delete2.svg" ></a></td>
+        </tr>
+        <tr style="background-color: rgb(255, 252, 248);">
+            <td>Zhang Hongchao</td>
+            <td>MIEGOCEKAN@gmail.com</td>
+            <td>12234165218</td>
+            <td><a href="input.html"><img src="/assets/edit2.svg" ></a></td>
+            <td><a href="#"><img src="/assets/delete2.svg" ></a></td>
+        </tr>
+        <tr>
+          <td>H.Kristanto</td>
+          <td>MIEGOCEKAN@gmail.com</td>
+          <td>12234165218</td>
+          <td><a href="input.html"><img src="/assets/edit2.svg" ></a></td>
+          <td><a href="#"><img src="/assets/delete2.svg" ></a></td>
+        </tr>
+        <tr style="background-color: rgb(255, 252, 248);">
+          <td>Zhang Hongchao</td>
+          <td>MIEGOCEKAN@gmail.com</td>
+          <td>12234165218</td>
+          <td><a href="input.html"><img src="/assets/edit2.svg" ></a></td>
+          <td><a href="#"><img src="/assets/delete2.svg" ></a></td>
+        </tr>
+      </table>
+    </div>
+   </div>
+   <script>
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+   </script>
+</body>
+</html>

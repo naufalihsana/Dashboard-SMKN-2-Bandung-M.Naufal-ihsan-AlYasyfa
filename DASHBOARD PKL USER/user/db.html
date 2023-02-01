@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/db.css">
+</head>
+<body>
+   <div class="nav">
+    <div class="dropdown">
+      <h2>Username</h2>
+      <img src="/assets/profile-svgrepo-com.svg" onclick="myFunction()" class="dropbtn" >
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">profil</a> 
+          <a href="#">setting</a>
+          <a href="#">about</a>
+          <a href="dblogin.html">log out</a>
+        </div>
+      </div>
+        </div>
+        <div class="sidebar">
+          <header>MENU</header>
+          <ul>
+            <li><a href="card.html">DATA DATA</i></a></li>
+            <li><a href="">Help</i></a></li>
+          </ul>
+        </div>
+    </div> 
+</div>
+    </div>
+    <div class="hero">
+      <h1>WELCOME</h1>
+    </div>
+   </div>
+   <script>
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+   </script>
+</body>
+</html>
