@@ -1,1 +1,5 @@
-# Projek-Dashboard-New
+![2023-02-01 (1)](https://user-images.githubusercontent.com/121842927/216020774-9ce84b35-9121-42c8-92d3-d762038b5a4f.png)
+![2023-02-01 (2)](https://user-images.githubusercontent.com/121842927/216020797-1c39951e-bd67-4ccc-855b-dcd997efe025.png)
+![2023-02-01 (3)](https://user-images.githubusercontent.com/121842927/216020828-64aa9e8a-79f4-4414-85bc-86d8ad97be11.png)
+![2023-02-01 (4)](https://user-images.githubusercontent.com/121842927/216020849-5e22681c-5ac6-409b-8739-da07f0879bb1.png)
+![2023-02-01 (5)](https://user-images.githubusercontent.com/121842927/216020864-034d52b5-fb55-4d54-8dbe-fe1671fd98cd.png)
